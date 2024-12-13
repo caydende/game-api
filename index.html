@@ -1,19 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
+  <body>
+        <header>
+            <img src="./imgs/wraper.png" alt="" class="w-100 bg-img">
+            <nav class=" container navbar navbar-expand-lg nav-bg-color rounded-4 nav-css ">
+              <div class="container-fluid">
+                <div class="d-flex">
+                    <img class="d-block" style="max-width: 40px; max-height: 37px" src="./imgs/logo-sm.png" alt="">
+                    <h5 class="navbar-brand fs-4 text-white">Game Reviews</h5>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="ms-auto navbar-nav me-1 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="#">MMORPG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">SHOOTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">SAILING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">PERMADEATH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">SUPERHERO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">PIXEL</a>
+                    </li>
+                  </ul>
+      
+                </div>
+              </div>
+            </nav>
+        </header>
 
+        <section class="container ">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-md-4 col-sm-6 col-xl-3 ">
+              <div class="card h-100 card-bg">
+                <div class="card-p pb-0">
+                  <img src="./imgs/thumbnail.jpg" class="card-img-top object-fit-cover h-50 rounded-top-2 " alt="...">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between ">
+                      <h5 class="card-title text-white fs-6">Card title</h5>
+                      <span class="badge text-bg-primary p-2">Free</span>
+                    </div>
+                    <p class="card-text text-center card-desc m-auto p-auto">This is a wide bit longer. Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                  </div>
+                </div>
+                <div class="card-footer card-f ">
+                  <div class="d-flex justify-content-between ">
+                    <p class="rounded-3">MMORPG</p>
+                    <p class="rounded-3">PC (WINDOWS)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xl-3 ">
+              <div class="card h-100 card-bg">
+                <div class="card-p pb-0">
+                  <img src="./imgs/thumbnail.jpg" class="card-img-top object-fit-cover h-50 " alt="...">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between  m-auto p-auto">
+                      <h5 class="card-title text-white fs-6">Card title</h5>
+                      <span class="badge text-bg-primary p-2 ">Free</span>
+                    </div>
+                    <p class="card-text text-center card-desc   ">This is a wide bit longer.</p>
+                  </div>
+                </div>
+                <div class="card-footer card-f ">
+                  <div class="d-flex justify-content-between ">
+                    <p class="rounded-3">MMORPG</p>
+                    <p class="rounded-3">PC (WINDOWS)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xl-3 ">
+              <div class="card h-100 card-bg">
+                <div class="card-p pb-0">
+                  <img src="./imgs/thumbnail.jpg" class="card-img-top object-fit-cover h-50 " alt="...">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between ">
+                      <h5 class="card-title text-white fs-6">Card title</h5>
+                      <span class="badge text-bg-primary p-2 ">Free</span>
+                    </div>
+                    <p class="card-text text-center card-desc ">This is a wide bit longer.</p>
+                  </div>
+                </div>
+                <div class="card-footer card-f ">
+                  <div class="d-flex justify-content-between ">
+                    <p class="rounded-3">MMORPG</p>
+                    <p class="rounded-3">PC (WINDOWS)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xl-3 ">
+              <div class="card h-100 card-bg">
+                <div class="card-p pb-0">
+                  <img src="./imgs/thumbnail.jpg" class="card-img-top object-fit-cover h-50 " alt="...">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between ">
+                      <h5 class="card-title text-white fs-6">Card title</h5>
+                      <span class="badge text-bg-primary p-2 ">Free</span>
+                    </div>
+                    <p class="card-text text-center card-desc ">This is a wide bit longer.</p>
+                  </div>
+                </div>
+                <div class="card-footer card-f ">
+                  <div class="d-flex justify-content-between ">
+                    <p class="rounded-3">MMORPG</p>
+                    <p class="rounded-3">PC (WINDOWS)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xl-3 ">
+              <div class="card h-100 card-bg">
+                <div class="card-p pb-0">
+                  <img src="./imgs/thumbnail.jpg" class="card-img-top object-fit-cover h-50 " alt="...">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between ">
+                      <h5 class="card-title text-white fs-6">Card title</h5>
+                      <span class="badge text-bg-primary p-2 ">Free</span>
+                    </div>
+                    <p class="card-text text-center card-desc ">This is a wide bit longer.</p>
+                  </div>
+                </div>
+                <div class="card-footer card-f ">
+                  <div class="d-flex justify-content-between ">
+                    <p class="rounded-3">MMORPG</p>
+                    <p class="rounded-3">PC (WINDOWS)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xl-3 ">
+              <div class="card h-100 card-bg">
+                <div class="card-p pb-0">
+                  <img src="./imgs/thumbnail.jpg" class="card-img-top object-fit-cover h-50 " alt="...">
+                  <div class="card-body ">
+                    <div class="d-flex justify-content-between ">
+                      <h5 class="card-title text-white fs-6">Card title</h5>
+                      <span class="badge text-bg-primary p-2 ">Free</span>
+                    </div>
+                    <p class="card-text text-center card-desc ">This is a wide bit longer.</p>
+                  </div>
+                </div>
+                <div class="card-footer card-f ">
+                  <div class="d-flex justify-content-between ">
+                    <p class="rounded-3">MMORPG</p>
+                    <p class="rounded-3">PC (WINDOWS)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
 
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>

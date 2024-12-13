@@ -1,0 +1,82 @@
+
+
+body{
+    background-color: #272B30;
+    font-family: "Comfortaa" ;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Nerko One";
+}
+
+
+
+
+
+.bg-img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+
+.nav-css{
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 0.5) ;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.card-f p{
+    padding: 3px;
+    color: white;
+    font-size: 8px;
+    background-color: #34393A;
+}
+
+.card-f{
+    background-color: #272B2F;
+    padding-bottom: 0px;
+
+}
+
+
+.card-desc{
+    color: #8D9092;
+}
+
+.card-bg{
+    background-color: #272B30;
+}
+
+.card-p{
+    padding: 16px;
+    font-size: 12px;
+}
+
+.nav-bg-color{
+    background-color: #3B497A
+}
+
+
+
+.card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
