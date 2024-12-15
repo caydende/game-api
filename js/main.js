@@ -120,7 +120,7 @@ function displayGames() {
 
 
   document.querySelectorAll(".card").forEach(card => {
-    card.addEventListener("click", (event) => {
+    card.addEventListener("click", () => {
       const id = card.getAttribute("data-id");
       displayDetails(gamesData[id]); // Pass the corresponding game object
       details.classList.remove("d-none");
