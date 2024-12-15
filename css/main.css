@@ -1,11 +1,7 @@
-
-
-body{
-    background-color: #272B30;
-    font-family: "Comfortaa" ;
+body {
+  background-color: #272b30;
+  font-family: "Comfortaa";
 }
-
-
 
 h1,
 h2,
@@ -13,70 +9,147 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: "Nerko One";
+  font-family: "Nerko One";
 }
 
-
-
-
+.nav-link.active,
+.nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
 
 .bg-img {
-    max-height: 30vh;
-    object-fit: cover;
+  max-height: 30vh;
+  object-fit: cover;
 }
 
-
-.nav-css{
-    position: sticky;
-    top: 0px;
-    overflow: hidden;
-    box-shadow: 0 0 10px 2px rgb(0 0 0 / 0.5) ;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+.nav-css {
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 2px rgb(0 0 0 / 0.5);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
-.card-f p{
-    padding: 3px;
-    color: white;
-    font-size: 8px;
-    background-color: #34393A;
+.card-f p {
+  padding: 3px;
+  color: white;
+  font-size: 8px;
+  background-color: #34393a;
 }
 
-.card-f{
-    background-color: #272B2F;
-    padding-bottom: 0px;
-
+.card-f {
+  background-color: #272b2f;
+  padding-bottom: 0px;
 }
 
-
-.card-desc{
-    color: #8D9092;
+.card-img-top {
+ 
+  height: 200px;  
+  object-fit: cover;  
 }
 
-.card-bg{
-    background-color: #272B30;
+.card-desc {
+  color: #8d9092;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 3;
+  box-orient: vertical;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 4.5em;
 }
 
-.card-p{
-    padding: 16px;
-    font-size: 12px;
+.card-bg {
+  background-color: #272b30;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.nav-bg-color{
-    background-color: #3B497A
+.card-p {
+  padding: 16px;
+  font-size: 12px;
 }
 
-
+.nav-bg-color {
+  background-color: #3b497a;
+}
 
 .card {
-    filter: grayscale(0.7);
-    transition: transform 0.5s, filter 0.5s 0.1s;
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    filter: grayscale(0);
+  transform: scale(1.05);
+  filter: grayscale(0);
 }
+
+
+
+.details {
+  background-color: #272729be;
+  backdrop-filter: blur(4px);
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
